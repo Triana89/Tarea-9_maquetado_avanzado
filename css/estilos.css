@@ -1,0 +1,284 @@
+:root{
+    --primario: #146ead;
+    --primario_claro: #449cd4;
+    --primario_muy_claro: #bcdff5;
+    --primario_oscuro: #1458a0;
+    --gris_celeste: #b5cbd5;
+    --gris_claro: #b1b4b3;
+    --gris_oscuro: #7e7e7e;
+    --negro: #1f1e1d;
+    --blanco: #FFFFFF;
+    --amarillo_claro: #f5dd21;
+    --amarillo_oscuro: #f6d45c;
+    --rojo: #e7362f;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Hind Madurai', sans-serif;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+h1, h2, h3{   
+    color: var(--primario);
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between; 
+}
+.iconos{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+    font-size: 2.5rem;
+    color: var(--blanco);
+}
+.iconos a{
+    color: var(--blanco);
+}
+.iconos a:hover{
+    
+}
+.circulo_iconos{
+    background-image: linear-gradient(to bottom, var(--primario_oscuro) 0%, var(--primario_claro) 100%);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo_iconos:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-image: linear-gradient(to bottom, var(--primario_oscuro) 0%, var(--primario_claro) 100%);
+}
+.menu{
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-between;   
+}
+.menu a{
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+.menu a:hover{
+    background-color: var(--primario_oscuro);   
+    color: var(--amarillo_oscuro);
+}
+footer{
+    background-color: var(--gris_claro);
+    line-height: 1rem;
+    font-size: 1.4rem;
+} 
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_footer{
+    display: flex;
+    flex-direction: column;
+}
+.menu_footer a{
+    text-decoration: none;
+    color: var(--negro);
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+.menu_footer a:hover{
+    text-decoration: underline;
+    font-size: 1.6rem;
+    color: var(--primario);
+}
+.logo_mza{
+    width: 180px;
+    height: 100px;
+    margin: 2rem;
+}
+.resaltado{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.contacto{
+    padding-right: 2rem;
+}
+.telefono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.telefono .fa{
+    margin-right: 1rem;
+}
+.iconos_footer{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.iconos_footer a{
+    color: var(--gris_oscuro);
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+.iconos_footer a:hover{
+    color: var(--primario);
+    font-size: 2.4rem;
+}
+.diseño{
+    background-color: var(--gris_oscuro);
+    line-height: 2rem;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}   
+.diseño p{
+    margin: 0 2rem;
+}
+.diseño a{
+    text-decoration: none;
+    color: var(--negro);
+   
+}
+.diseño a:hover{
+    color: var(--primario);
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+/*INSTITUCIONAL*/
+main{
+    margin: 2rem;
+}
+
+.linea{
+    border-bottom: 3px solid var(--amarillo_oscuro);
+    color: var(--primario); 
+}
+.historia{
+    display: flex;
+    justify-content: space-between;
+}
+.parrafo{
+    flex-basis: calc(65% - 1rem);
+}
+.img_historia{
+    width: 300px;
+    margin: 2rem;
+    
+}    
+.autoridades_ppales{
+    display: flex;
+    justify-content: space-between;  
+    flex-wrap: wrap; 
+    gap: 2rem;
+    text-align: center;
+}
+.tarjeta_institucional{ /*aplica a cualquier tarjeta de la página*/
+    padding: 1rem;
+    margin: 20px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.tarjeta_institucional img{
+    width: 300px;
+    height: 200px;   
+}
+    
+/*CONTACTO*/
+.formulario {
+    padding: 2rem;
+    border-radius: 10px;
+}
+.formulario legend {
+    text-align: center;
+    padding: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.legend1{
+    font-size: 2rem;
+    color: var(--primario);
+}
+.legend2{
+    font-size: 1.8rem;
+    color: var(--amarillo_oscuro);  
+}
+
+.contenedor-campos {
+   
+}
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
+    margin: 2rem;
+}
+.campo label {
+    color: var(--primario);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 2.5px solid var(--negro);
+    border-radius: .5rem;
+}
+.w-100{
+    flex: 0 0 100%;
+}
+.campo textarea {
+    height: 4rem;
+}
+.enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+.boton {
+    background-color: var(--primario);
+    color: var(--blanco);
+    margin-top: .5rem;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border:none;
+}
+
+
+.boton:hover{
+    background-color: var(--amarillo_oscuro);
+    cursor: pointer;
+}
+.tarjeta{ /*aplica a cualquier tarjeta de la página*/
+    display: flex;
+    margin: 4rem;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.tarjeta img{
+   height: 600px;
+   width: 500px;
+}   
+
+
+
+
+
